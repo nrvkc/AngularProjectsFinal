@@ -11,6 +11,8 @@ serverCreationStatus ="No server was created!!"
 serverName='testsever';
 serverCreated=false;
   constructor() {
+
+    
       setTimeout(()=>{
           this.AllowNewServer=true;
       } ,2000)
