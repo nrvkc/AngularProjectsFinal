@@ -19,3 +19,14 @@
 <app-server *ngFor="let server of servers"></app-server>
 
 
+<!-- Assignment 3 Start-->
+
+<button class="btn btn-primary" (click)="toggleDisplay()">Display Details</button>
+
+<p *ngIf=onToggleValue>Show sectret = nirvik</p>
+
+<p *ngFor="let log of logs" [ngStyle]="{backgroundColor:getColorAssignment(log)}"
+[ngClass]="{WhiteFontColor:log >='5'}">{{log}}</p>
+
+
+<!-- Assignment 3 End-->
