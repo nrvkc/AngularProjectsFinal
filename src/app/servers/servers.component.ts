@@ -10,6 +10,7 @@ AllowNewServer=false;
 serverCreationStatus ="No server was created!!"
 serverName='testsever';
 serverCreated=false;
+servers=['testserver','testserver2']; //to learn ngfor it is used
   constructor() {
 
     
@@ -23,6 +24,7 @@ serverCreated=false;
   }
 onCreateServer(){
   this.serverCreated=true;
+  this.servers.push(this.serverName); //to learn ngfor it is used
   this.serverCreationStatus="Server was created";
 }
 onUpdateServerName(event:Event){  //Passing and Using Data With Event Binding
